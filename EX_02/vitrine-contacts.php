@@ -10,7 +10,9 @@
 
         <header>
         <?php $current_page == "Contacts"?>
-        <?php include "./navigation.php";?>
+        <?php
+        $page= "contacts";
+         include "./navigation.php";?>
  
             <h1> Summer Code Camp</h1>
             <?php include "header.php";?>

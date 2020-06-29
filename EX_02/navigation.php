@@ -1,43 +1,21 @@
-
-   <nav>
-                <a href="vitrine-accueil.php" class="fondNoir">Accueil</a>
-                <a href="vitrine-contacts.php" class="fondNoir">Contacts</a>   
-                <a href="vitrine-programme.php" class="fondNoir">Programme</a> 
-                </nav>
-                <style>
-
-                    
-.en-cour {
-color:#17c1ff;
-font-weight:bold; 
-}
-
-</style>
-
-
 <?php
+echo $page;
+?>
 
-if ($current=='Accueil'){
-echo '
+<header>
+    <a class="<?php
+    if($page == "Accueil") {
+        echo "show";
+    }
+    ?>" href= "vitrine-accueil.php">Accueil</a>
 
-<a class="en-cours:active" href="vitrine-acceuil.php">Accueil</a>
-<a href=vitrine-programme.php">Programme</a>
-<a href="vitrine-acceuil.php">Programme<Contact</a>';
-}
-
-if (current_page == 'Contact'){
-echo '
-<a class="en-cour" href="vitrine-contacts.php">Contact</a>
-<a href="vitrine-programme.php">Programme</a>
-<a href="vitrine-acceuil.php">Accueil</a>';
-}
-
-if(current_page == 'Programme') {
-echo'
-href="vitrine-programme.php">Programme</a>
-<a href="vitrine-acceuil.php">Accueil</a>
-<a class="en-cours" href="vitrine-contact.php">Contact</a>';
-}   
-
-
-
+    <a class="<?php
+    if($page == "contacts") {
+        echo "show";
+    }
+    ?>" href= "<vitrine-contacts.php">contacts</a>
+    <a class="<?php
+    if($page == "Programme") {
+        echo "show";
+    }
+    ?>" href= "vitrine-programme.php">Programme</a>

@@ -45,9 +45,6 @@ a:link{
     color: white;
 }
  
-a:visited {
-    color: white;
-}
  
 a:hover {
     background-color: #17c1ff;
@@ -109,4 +106,6 @@ footer{
     background-color: #2e2f30;
   }
 
-   
+   .show {
+       color: #17c1ff
+   }

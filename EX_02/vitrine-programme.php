@@ -9,8 +9,9 @@
             <?php $current_page == "Programme"?>
 
             <?php include "./navigation.php";?>
-
-              <?php include "header.php";?>
+              <?php 
+              $page= "Programme";
+              include "header.php";?>
             </header>
  
   <h1>Summer Code Camp</h1>
